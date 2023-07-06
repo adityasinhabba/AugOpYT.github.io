@@ -1,0 +1,505 @@
+/*
+ *  [ HTML & BODY ]
+ */
+
+:root,
+:after,
+:before,
+.dark,
+.dark :before,
+.dark :after {
+    /* StyleChanger Values */
+    --default-primary-color: 53, 73, 204;
+    --default-background-color: 220, 220, 220;
+    --color-1: 0, 224, 233;
+    --color-2: 203, 47, 47;
+    --color-3: 47, 203, 145;
+    --color-4: 245, 215, 25;
+    --color-5: 186, 0, 245;
+    --background-color-1: 15, 16, 19;
+    --background-color-2: 6, 13, 19;
+    --background-color-3: 0, 3, 10;
+}
+
+:root,
+:before,
+:after {
+    --top-navigation-color: 255, 255, 255, .3;
+    --main-navigation-color: 255, 255, 255, .1;
+    --secondary-navigation-color: 255, 255, 255, 1;
+    --nav-item-color: 255, 255, 255, 1;
+    --banner-color: 35, 114, 204, .80;
+    --second-banner-color: 35, 114, 204, .80;
+    --colored-banner-color: 38, 133, 209, .95;
+    --colored-second-banner-color: 8, 53, 69, .90;
+    --banner-text-color: 255, 255, 255;
+    --icon-background-color: 53, 73, 204;
+    --icon-color: 255, 255, 255;
+    --primary-color: 53, 73, 204;
+    --primary-button-color: var(--default-primary-color);
+    --primary-button-text-color: 255, 255, 255;
+    --button-color: 19, 44, 64;
+    --button-text-color: 255, 255, 255;
+    --background-color: 220, 220, 220;
+    --panel-color: 255, 255, 255;
+    --panel-acent-color: 247, 247, 247;
+    --news-background-color: 53, 73, 204;
+    --news-color: 255, 255, 255, 1;
+    --second-news-color: 238, 238, 228;
+    --text-color: 0, 0, 0;
+    --secondary-text-color: 178, 178, 178;
+    --footer-background-color: 255, 255, 255;
+    --secondary-footer-color: 201, 201, 217;
+    --footer-text-color: 0, 0, 0;
+    --second-footer-text-color: 0, 0, 0;
+    --footer-link-background: 232, 236, 243;
+    --footer-link-text-color: 0, 0, 0;
+}
+
+.dark,
+.dark :before,
+.dark :after {
+    --top-navigation-color: 0, 0, 0, .60;
+    --main-navigation-color: 17, 18, 26, .60;
+    --secondary-navigation-color: 17, 18, 26, .60;
+    --nav-item-color: 255, 255, 255, 1;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 0, 33, 59, .95;
+    --colored-second-banner-color: 0, 13, 19, .95;
+    --banner-text-color: 255, 255, 255;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --primary-color: 38, 133, 209;
+    --primary-button-color: var(--default-primary-color);
+    --primary-button-text-color: 255, 255, 255;
+    --button-color: 19, 44, 64;
+    --button-text-color: 255, 255, 255;
+    --background-color: 20, 21, 25;
+    --panel-color: 15, 16, 20;
+    --panel-acent-color: 10, 11, 12;
+    --news-background-color: 10, 11, 12;
+    --news-color: 255, 255, 255, 1;
+    --second-news-color: 238, 238, 228;
+    --text-color: 255, 255, 255;
+    --secondary-text-color: 178, 178, 178;
+    --footer-background-color: 28, 29, 38;
+    --secondary-footer-color: 20, 20, 28;
+    --footer-text-color: 255, 255, 255;
+    --second-footer-text-color: 178, 178, 178;
+    --footer-link-background: 32, 35, 43;
+    --footer-link-text-color: 255, 255, 255;
+}
+
+.dark.back1,
+.dark.back1 :after,
+.dark.back1 :before {
+    --background-color: var(--background-color-1);
+    --secondary-background-color: 13, 14, 19;
+    --panel-color: 18, 18, 24;
+}
+
+.dark.back2,
+.dark.back2 :after,
+.dark.back2 :before {
+    --background-color: var(--background-color-2);
+    --secondary-background-color: 16, 31, 43;
+}
+
+.dark.back3,
+.dark.back3 :after,
+.dark.back3 :before {
+    --background-color: var(--background-color-3);
+    --secondary-background-color: 21, 25, 30;
+}
+
+.blue {
+    --primary-color: 0, 224, 233;
+    --primary-text-color: 0, 224, 233;
+    --primary-button-color: 0, 194, 203;
+    --shadow: 0, 224, 233;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 0, 124, 133, .95;
+    --colored-second-banner-color: 0, 24, 33, .9;
+    --banner-text-color: 255, 255, 255;
+}
+
+.dark.blue {
+    --primary-color: 0, 224, 233;
+    --primary-text-color: 0, 224, 233;
+    ;
+    --primary-button-color: 0, 194, 203;
+    --shadow: 0, 224, 233;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 0, 44, 53, .95;
+    --colored-second-banner-color: 0, 14, 23, .9;
+    --banner-text-color: 255, 255, 255;
+}
+
+.red {
+    --primary-color: 203, 47, 47;
+    --primary-text-color: 203, 47, 47;
+    --primary-button-color: 203, 47, 47;
+    --shadow: 203, 47, 47;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 75, 22, 15, 0.9;
+    --colored-second-banner-color: 155, 80, 70, 0.9;
+    --banner-text-color: 255, 255, 255;
+}
+
+.dark.red {
+    --primary-color: 203, 47, 47;
+    --primary-text-color: 203, 47, 47;
+    --primary-button-color: 203, 47, 47;
+    --shadow: 203, 47, 47;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 33, 1, 1, .95;
+    --colored-second-banner-color: 34, 37, 47, .95;
+    --banner-text-color: 255, 255, 255;
+}
+
+.green {
+    --primary-color: 47, 203, 145;
+    --primary-text-color: 47, 203, 145;
+    --primary-button-color: 47, 203, 145;
+    --shadow: 47, 203, 145;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 15, 70, 22, 0.8;
+    --colored-second-banner-color: 100, 155, 100, 0.9;
+    --banner-text-color: 255, 255, 255;
+}
+
+.dark.green {
+    --primary-color: 47, 203, 145;
+    --primary-text-color: 47, 203, 145;
+    --primary-button-color: 47, 203, 145;
+    --shadow: 47, 203, 145;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 1, 33, 14, .95;
+    --colored-second-banner-color: 34, 37, 47, .95;
+    --banner-text-color: 255, 255, 255;
+}
+
+.yellow {
+    --primary-color: 245, 215, 25;
+    --primary-text-color: 245, 215, 25;
+    --primary-button-color: 245, 215, 25;
+    --shadow: 245, 215, 25;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 155, 133, 10, .9;
+    --colored-second-banner-color: 63, 34, 5, 0.9;
+    --banner-text-color: 255, 255, 255;
+}
+
+.dark.yellow {
+    --primary-color: 245, 215, 25;
+    --primary-text-color: 245, 215, 25;
+    --primary-button-color: 245, 215, 25;
+    --shadow: 245, 215, 25;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 33, 33, 0, .95;
+    --colored-second-banner-color: 34, 37, 47, .95;
+    --banner-text-color: 255, 255, 255;
+}
+
+.purple {
+    --primary-color: 186, 0, 245;
+    --primary-text-color: 186, 0, 245;
+    --primary-button-color: 108, 19, 136;
+    --shadow: 186, 0, 245;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 128, 60, 234, 0.85;
+    --colored-second-banner-color: 98, 60, 234, 0.85;
+    --banner-text-color: 255, 255, 255;
+}
+
+.dark.purple {
+    --primary-color: 186, 0, 245;
+    --primary-text-color: 186, 0, 245;
+    --primary-button-color: 108, 19, 136;
+    --shadow: 186, 0, 245;
+    --icon-background-color: 255, 255, 255;
+    --icon-color: 20, 21, 25;
+    --banner-color: 34, 37, 47, .95;
+    --second-banner-color: 34, 37, 47, .95;
+    --colored-banner-color: 20, 1, 36, .95;
+    --colored-second-banner-color: 34, 37, 47, .95;
+    --banner-text-color: 255, 255, 255;
+}
+
+.header.colored {
+    --banner-color: var(--colored-banner-color);
+    --second-banner-color: var(--colored-second-banner-color);
+}
+
+*:not(i, .far) {
+    font-family: "poppins", sans-serif !important;
+    color: rgba(var(--text-color));
+    box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    background: rgba(var(--background-color));
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(var(--background-color));
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    color: rgba(var(--text-color));
+    position: relative;
+}
+
+h2 {
+    margin: 0 0 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(var(--primary-color), .8);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(var(--primary-color));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(var(--primary-color), .9);
+}
+
+/* Other */
+
+.cont {
+    display: flex;
+    padding: 5em 0;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+}
+
+.cont.links {
+    align-items: flex-start;
+}
+
+.cont .flex {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 30%;
+    gap: 3em;
+}
+
+.cont.links .flex {
+    flex-wrap: wrap;
+}
+
+/* Particles */
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: clamp(400px, 30%, 800px);
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 33vh;
+    text-align: center;
+    animation: logo 6s ease, 4s floating 6s infinite ease;
+    position: relative;
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(1, 1) translateY(-60vh);
+    }
+    40% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+    67% {
+        transform: scale(1, 1) translateY(-5vh);
+    }
+    94% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0vh);
+    }
+    50% {
+        transform: translateY(-5vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.discord,
+.server {
+    display: inline-flex;
+    flex: 1 1 300px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+    cursor: pointer;
+    color: rgba(var(--banner-text-color));
+}
+
+.discord:hover,
+.server:hover {
+    color: rgba(var(--banner-text-color), .9);
+}
+
+.discordIcon,
+.serverIcon {
+    padding: 1em;
+    background-color: rgba(var(--icon-background-color));
+    border-radius: 1rem;
+}
+
+.discordIcon>i,
+.serverIcon>i {
+    font-size: clamp(25px, 2vw, 50px);
+    color: rgba(var(--icon-color));
+}
+
+.discordText,
+.serverText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.membersText,
+.playersText {
+    font-size: clamp(12px, .8vw, 14px);
+}
+
+.serverText {
+    align-items: flex-end;
+}
+
+.ipCopy {
+    font-size: clamp(13px, .85vw, 20px);
+    font-weight: 600 !important;
+}
+
+.flex *:not(i) {
+    color: rgba(var(--banner-text-color));
+}
+
+/* Links */
+
+.item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    background: rgba(var(--primary-color));
+    height: 150px;
+    width: 150px;
+    border-radius: 0.3rem;
+    box-shadow: rgba(var(--text-color), 0.1) 0px 10px 15px -3px, rgba(var(--text-color), 0.05) 0px 4px 6px -2px;
+}
+
+.item i {
+    font-size: clamp(25px, 2vw, 50px);
+}
+
+/* Mobile view */
+
+@media only screen and (max-width: 768px) {
+    .cont {
+        padding: 1em 0 5em;
+    }
+    .container.server,
+    .container.discord {
+        display: none;
+    }
+}

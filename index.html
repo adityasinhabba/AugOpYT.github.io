@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Vote For GodSpunky Network">
+    <meta name="author" content="BBAGOD69">
+    <meta name="link" content="https://vote.godspunky.in/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vote.godspunky.in/">
+    <meta property="og:title" content="GodSpunky | Vote">
+    <meta property="og:description" content="Vote For GodSpunky Network">
+    <meta property="og:image" content="./img/logo.webp">
+    <meta name="theme-color" content="#3549cc">
+
+
+    <link rel="icon" href="img/logo.webp">
+    <title>GodSpunky | Vote</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="" style="background-image: url('./img/back.webp');">
+    <div id="particles-js"></div>
+    <div class="cont">
+        <div class="flex">
+            <div class="container server">
+                <a class="copy" data-clipboard-text="play.godspunky.in" onclick="change_text();">
+                    <div class="server">
+                        <div class="serverText">
+                            <small class="ipCopy primary">
+                                PLAY.GODSPUNKY.IN                            </small>
+                            <div class="playersText" id="playersText">
+                                <span id="players"></span> Players Online
+                            </div>
+                        </div>
+                        <div class="serverIcon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="container logo">
+                <a href="/">
+                    <img src="img/logo.webp">
+                </a>
+            </div>
+            <div class="container discord">
+                <a href="https://discord.gg/trBJjKB" class="discordLink">
+                    <div class="discord">
+                        <div class="discordIcon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="discordText">
+                            <small class="ipCopy primary">DISCORD SERVER</small>
+                            <div class="membersText">
+                                <span id="count"></span> Members Online
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="cont links">
+        <div class="flex">
+            <a class='item' href='./1'><i class='fa fa-gift'></i><h2>Vote Link #1</h2></a><a class='item' href='./2'><i class='fas fa-gift'></i><h2>Vote Link #2</h2></a>            </div>
+    </div>
+</body>
+
+</html>
+
+
+<script type="text/javascript" src="js/jtgraphics.js"></script>
+
+<script>
+    var clipboard = new ClipboardJS('.copy');
+
+    window.onload = function() {
+        getDiscordMembers("1026498084777230376");
+
+        getMinecraftPlayers("play.godspunky.in");
+        setInterval(function() {
+            getMinecraftPlayers("play.godspunky.in");
+        }, 60 * 1000);
+    }
+</script>
+
+<script src='js/particles.js'></script>
+<script id='rendered-js'>
+    particleToggle();
+</script>
